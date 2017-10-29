@@ -24,7 +24,7 @@ class App extends Component {
   }
   addTrack(track){
     for (let i = 0; i < this.state.playlistTracks.length; i++) {
-      let currTrack = this.state.playlistTracks[i];
+      let currTrack = this.state.playlistTracks[i];
       if(currTrack.id !== track.id){
       //add song
         this.state.playlistTracks.push(track);
@@ -35,7 +35,7 @@ class App extends Component {
   }
   removeTrack(track){
     for (let i = 0; i < this.state.playlistTracks.length; i++) {
-      let currTrack = this.state.playlistTracks[i];
+      let currTrack = this.state.playlistTracks[i];
       if(currTrack.id === track.id){
       //remove song
         this.state.playlistTracks.splice(i,1);
